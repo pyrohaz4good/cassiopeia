@@ -3,10 +3,12 @@ Cassiopeia
 
 This project is a fork of polastre's united upgrade availability search. My fork allows you to return all the bucket space for a route in a range of dates for a one-way flight. It then tells you how many spaces are available for GPU/RPU and MileagePlus upgrade awards.
 
-Polastre made a great tool, I just added some web prettiness to make it easier to find the bucket space you're looking for. If this tool breaks, just go to his version and use it. 
+![award search](https://github.com/pyrohaz4good/cassiopeia/raw/master/screenshots/screenshot1.png)
+
+Polastre made a great tool, I just added some web prettiness to make it easier to find the bucket space you're looking for. If this tool breaks, just go to his version and use it.
 
 
-## united.js tool (polastre v2.2015 release) 
+## united.js tool (polastre v2.2015 release)
 
 The main component is a node.js script that goes through the United.com search process.
 
@@ -47,5 +49,4 @@ United Premier 1K members, Global Services, anyone holding an upgrade certificat
 This tool searches for **one-way** availability between the two specified airports.  It looks at every date, and determines whether immediately upgradable seats are available.  You should put your outbound flight in a one query, and then your potential return flight (and date range) as another.  When you find both outbound and return flights with upgrade availability, then go to [united.com](https://www.united.com/ual/en/us/flight-search/book-a-flight) and search with those specific dates.
 
 ### Why the stupid name?
-Cassiopei is a constellation that allows you to find Polaris, the north star. Polaris is the name of United's new business class product that few have ever actually seen besides the soft product. 
-
+Cassiopei is a constellation that allows you to find Polaris, the north star. Polaris is the name of United's new business class product that few have ever actually seen besides the soft product.
