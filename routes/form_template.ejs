@@ -1,0 +1,19 @@
+<form class="form-inline" method="post" action="/search">
+<div class="form-group">
+  <label for="startDate">Start Date</label>
+  <input type="date" class="form-control" id="startDate" name="startDate" placeholder="Start Date" value="<%= data.startDate %>">
+</div>
+<div class="form-group">
+  <label for="endDate">End Date</label>
+  <input type="date" class="form-control" id="endDate" name="endDate" placeholder="End Date" value="<%= data.endDate %>">
+</div>
+<div class="form-group">
+  <label for="origin">Origin</label>
+  <input type="text" class="form-control" id="origin" name="origin" placeholder="Origin" value="<%= data.origin %>">
+</div>
+<div class="form-group">
+  <label for="destination">Destination</label>
+  <input type="text" class="form-control" id="destination" name="destination" placeholder="Destination" value="<%= data.destination %>">
+</div>
+<button type="submit" class="btn btn-default">Submit</button>
+</form>

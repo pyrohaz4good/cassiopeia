@@ -1,3 +1,4 @@
+
 var _ = require('lodash')
 var fs = require('fs')
 var request = require('request')
@@ -13,11 +14,17 @@ var finalResults = []
 
 // set data based on args
 var config = {
-  origin: args[0],
-  destination: args[1],
-  start: new Date(args[2]),
-  end: new Date(args[3])
+  origin: "SFO",
+  destination: "WAS",
+  start: new Date("3/23/2017"),
+  end: new Date("3/23/2017")
 }
+// var config = {
+//   origin: "IAD",
+//   destination: "BRU",
+//   start: new Date(args[2]),
+//   end: new Date(args[3])
+// }
 
 var headers = {
   "X-Requested-With": "XMLHttpRequest",
@@ -143,7 +150,7 @@ var dates = []
 for (var d = new Date(config.start); d <= config.end; d.setDate(d.getDate() + 1)) {
   dates.push(new Date(d))
 }
-
+var respbody = ""
 async.each(dates, loadResultsByDate, function (err) {
   finalResults.sort(function (a,b) { return a.date - b.date })
   for (var i = 0; i < finalResults.length; i++) {

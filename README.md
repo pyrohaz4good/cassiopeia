@@ -1,29 +1,30 @@
-United Upgrades
+Cassiopeia
 ======
 
-A tool to find upgrade availability on United Airlines. Includes web front-end implementation.
+This project is a fork of polastre's united upgrade availability search. My fork allows you to return all the bucket space for a route in a range of dates for a one-way flight. It then tells you how many spaces are available for GPU/RPU and MileagePlus upgrade awards.
 
-## united.js tool
+Polastre made a great tool, I just added some web prettiness to make it easier to find the bucket space you're looking for. If this tool breaks, just go to his version and use it. 
+
+
+## united.js tool (polastre v2.2015 release) 
 
 The main component is a node.js script that goes through the United.com search process.
 
 Follow these steps to get started:
 
 1. Install [Node.js](https://nodejs.org)
-1. [Download this repository](https://github.com/polastre/united/archive/master.zip)
-1. Extract the zip file
-1. Open up a command shell and switch to the extracted directory
-1. Install node dependencies by typing `npm install`
+2. [Download this repository]
+3. Extract the zip file
+4. Open up a command shell and switch to the extracted directory
+5. Install node dependencies by typing `npm install`
 
 Run the tool with:
 
-    node united.js ORIGIN DESTINATION START END
+    node server.js
 
-Example
+Then open your browser to http://localhost:3000/search
 
-    node united.js SFO TPE 5/18/2016 5/20/2016
-
-## FAQ
+## All the original FAQs from polastre still apply so here they are:
 
 The relevant sections of the FAQ in [2014/www/templates/index.html](2014/www/templates/index.html) are copied here.
 
@@ -44,4 +45,7 @@ United Premier 1K members, Global Services, anyone holding an upgrade certificat
 ### How Do I Use This?
 
 This tool searches for **one-way** availability between the two specified airports.  It looks at every date, and determines whether immediately upgradable seats are available.  You should put your outbound flight in a one query, and then your potential return flight (and date range) as another.  When you find both outbound and return flights with upgrade availability, then go to [united.com](https://www.united.com/ual/en/us/flight-search/book-a-flight) and search with those specific dates.
+
+### Why the stupid name?
+Cassiopei is a constellation that allows you to find Polaris, the north star. Polaris is the name of United's underwhelming new business class product. '
 

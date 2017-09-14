@@ -1,0 +1,16 @@
+
+<td>$<%= data['PricesByColumn']['ECONOMY'] %>&nbsp;</td>
+<td><span class="label label-primary"><%= data['MarketingCarrier'] %> <%= data['FlightNumber'] %></span> <%= data['DepartTimeFormat'] %> > <%= data['DestinationTimeFormat'] %> &nbsp;</td>
+<td><%= data['OriginDescription'] %> > <%= data['DestinationDescription'] %> <br><% _.forEach(data['Connections'], function(connect) { %>
+<%= connect['MarketingCarrier'] %> <%= connect['FlightNumber'] %> <%= connect['DepartTimeFormat'] %> >
+<%= connect['DestinationTimeFormat'] %> <br><%= connect['OriginDescription'] %> -> <%= connect['DestinationDescription'] %><% }) %><br>
+<% _.forEach(data['BookingClassAvailList'], function(avail) { %>
+  <% if (avail[0]=="R") { %><span class="label label-success"><%= avail %></span><% } else { %> <span class="label label-default"><%= avail %></span> <% } %><% }) %></td>
+<td><span class="label label-primary">GPU/RPU Upgrades:
+  <% _.forEach(data['BookingClassAvailList'], function(avail) { %>
+    <% if (avail[0]=="R" && avail[1]!="N") { %><%= avail[1] %><% } %><% }) %>
+  </span>
+<span class="label label-primary">MileagePlus Upgrades:
+  <% _.forEach(data['BookingClassAvailList'], function(avail) { %>
+    <% if (avail[0]=="R" && avail[1]=="N") { %><%= avail[2] %><% } %><% }) %>
+  </span></td>
