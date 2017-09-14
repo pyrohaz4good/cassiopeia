@@ -1,14 +1,14 @@
 {
-  "name": "united",
+  "name": "casseopeia",
   "version": "1.0.0",
-  "description": "A tool to search for upgrades on united.com",
-  "author": "Joe Polastre <joe@polastre.com>",
+  "description": "A fork of Joe Polastre's tool to search for upgrades on united.com",
+  "author": "Joe Polastre <joe@polastre.com> and forked by pyrohaz4good",
   "repository": {
     "type": "git",
-    "url": "https://github.com/polastre/united"
+    "url": "https://github.com/pyrohaz4good/casseopeia"
   },
   "bugs": {
-    "url": "https://github.com/polastre/united/issues"
+    "url": "https://github.com/pyrohaz4good/casseopeia/issues"
   },
   "keywords": [
     "united",
@@ -19,7 +19,9 @@
     "async": "1.5.x",
     "lodash": "~3.10.1",
     "request": "2.65.x",
-    "colors": "*"
+    "colors": "*",
+    "express": "~4.14.1",
+    "body-parser": "1.16.0"
   },
   "devDependencies": {
   },
