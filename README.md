@@ -47,5 +47,5 @@ United Premier 1K members, Global Services, anyone holding an upgrade certificat
 This tool searches for **one-way** availability between the two specified airports.  It looks at every date, and determines whether immediately upgradable seats are available.  You should put your outbound flight in a one query, and then your potential return flight (and date range) as another.  When you find both outbound and return flights with upgrade availability, then go to [united.com](https://www.united.com/ual/en/us/flight-search/book-a-flight) and search with those specific dates.
 
 ### Why the stupid name?
-Cassiopei is a constellation that allows you to find Polaris, the north star. Polaris is the name of United's underwhelming new business class product. '
+Cassiopei is a constellation that allows you to find Polaris, the north star. Polaris is the name of United's new business class product that few have ever actually seen besides the soft product. 
 
